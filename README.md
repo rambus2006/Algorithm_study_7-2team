@@ -118,9 +118,29 @@
 ### 2. 레포지토리 경로 설정 후 Create Fork 클릭
 ![alt text](/README_ASSETS/image-1.png)
 
-### 3. 문제 커밋 진행 후, 상단의 Pull Requests 클릭
+### 3. 문제 커밋 진행 후, 상단의 Pull Requests 클릭 후 new pull request 버튼 클릭
 ![alt text](/README_ASSETS/image-2.png)
 
+### 4. 경로 확인(중요) 후 create pull request 버튼 클릭
+![alt text](/README_ASSETS/image-3.png)
+
+### 5. 내용 작성후 create pull request 버튼 클릭
+- 제목 : [문제 사이트] - 문제 번호 + 메세지
+- 내용 : 문제 링크, 풀이 코드, 풀이 방법 설명
+- 예시
+> ```
+> # [BOJ] 1054
+> [문제 이름](문제 url)
+>
+> ## 문제 코드
+> '''python
+> print('test')
+> '''
+> 
+> ## 풀이 방식
+> - 프린트함
+> ```
+![alt text](/README_ASSETS/image-4.png)
 
 ## ℹ️ 이슈 작성 방법
 ### 1. 이슈 버튼 클릭
