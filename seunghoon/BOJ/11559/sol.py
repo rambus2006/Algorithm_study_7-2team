@@ -22,6 +22,7 @@ dxy = ((1, 0), (-1, 0), (0, -1), (0, 1))
 def check():
     flag = 0
     for i in range(height):
+        arr = 0
         for j in range(weight):
             # 값이 있을시 인근에 같은값 탐색
             if grid[i][j] != '.':
@@ -48,6 +49,9 @@ def check():
                     flag = 1
                     for ax, ay in arr:
                         grid[ax][ay] = '.'
+            else:
+                if not arr:
+                    break
     # 한번이라도 변경이 일어나면 1 반환
     if flag:
         return 1
