@@ -63,7 +63,6 @@ def find():
                 if arr[i][j] != '.':
                     drop(i, j, arr)
 
-
         cnt += 1
 
 width = 12
