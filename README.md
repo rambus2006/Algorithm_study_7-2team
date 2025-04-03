@@ -104,13 +104,13 @@
 
 ## ℹ️ PR 방법
 ### 1. 메인 레포지토리에서 FORK 버튼 클릭
-![alt text](image.png)
+![alt text](/README_ASSETS/image.png)
 
 ### 2. 레포지토리 경로 설정 후 Create Fork 클릭
-![alt text](image-1.png)
+![alt text](/README_ASSETS/image-1.png)
 
 ### 3. 문제 커밋 진행 후, 상단의 Pull Requests 클릭
-![alt text](image-2.png)
+![alt text](/README_ASSETS/image-2.png)
 
 
 ## ℹ️ 이슈 작성 방법
