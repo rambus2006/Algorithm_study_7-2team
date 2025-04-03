@@ -1,4 +1,13 @@
 # ssafy 서울 7반 알고리즘 스터디 2팀
+### 바로가기
+- [📢 RULES](#📢-rules)
+- [ℹ️ 코드 업로드 방식](#ℹ️-코드-업로드-방식)
+- [📁 폴더 구조 ](#📁-폴더-구조)
+- [ℹ️ Commit Convention](#ℹ️-commit-convention)
+- [ℹ️ PR 방법](#ℹ️-pr-방법)
+- [ℹ️ 이슈 작성 방법](#ℹ️-이슈-작성-방법)
+
+
 ## 📢 RULES
 - 평일 하루 1문제, 주말 하루 3문제 이상 풀기. 
 - 풀지 못한 문제라도 코드리뷰를 위해 올려주세요. ( 내 힘으로 풀고싶다면 사전에 양해 구해주세요. )
@@ -114,4 +123,20 @@
 
 
 ## ℹ️ 이슈 작성 방법
-- 추후 추가 예정
+### 1. 이슈 버튼 클릭
+![alt text](/README_ASSETS/issue.png)
+
+### 2. 이슈 작성
+- 제목 : [문제 사이트] - 문제 번호 + 메세지
+- 내용 : 자유 형식이되 코드를 같이 붙여 넣어주세요!
+![alt text](/README_ASSETS/issue2.png)
+
+### 3. assigness 설정
+- 도와줄 스터디원들 + 자기 자신 assigness 설정해주세요.
+- ![alt text](/README_ASSETS/issue3.png)
+
+### 4. label 설정
+- 자기가 작성한 리뷰에 맞는 라벨링을 진행해 주세요!
+![alt text](/README_ASSETS/issue4.png)
+
+### 이후 create 하면 완료!
