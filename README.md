@@ -124,7 +124,7 @@
 ### 4. 경로 확인(중요) 후 create pull request 버튼 클릭
 ![alt text](/README_ASSETS/image-3.png)
 
-### 5. 내용 작성후 create pull request 버튼 클릭
+### 5. 내용 작성
 - 제목 : [문제 사이트] - 문제 번호 + 메세지
 - 내용 : 문제 링크, 풀이 코드, 풀이 방법 설명
 - 예시
@@ -140,7 +140,14 @@
 > ## 풀이 방식
 > - 프린트함
 > ```
+
+### 6. reviewr , assigness, label 설정 
+- reviewr에 팀장과 자기 조원들 추가
+- 자기 PR에 맞는 라벨 추가
+- 스터디장 assigness에 추가
 ![alt text](/README_ASSETS/image-4.png)
+
+### 7. 이후 Create Pull Request 버튼 클릭!
 
 ## ℹ️ 이슈 작성 방법
 ### 1. 이슈 버튼 클릭
