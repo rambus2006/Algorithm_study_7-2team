@@ -1,5 +1,3 @@
-# https://gptonline.ai/ko/ 에서 더 많은 알고리즘 문제 풀이를 확인해보세요!
-
 T = int(input())
 
 def findResult(n, m, arr): 
