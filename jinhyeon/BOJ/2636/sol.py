@@ -1,33 +1,36 @@
-def back(top, result, pre_num = 0, pre_top = 0):
-    if len(top[2]) == k:
-        global min_cnt
-        global ans
-        if min_cnt > len(result):
-            min_cnt = len(result)
-            ans = result[:]
-        return
-    for i in range(3):
-        if top[i]:
-            num = top[i][-1]
-            for j in range(3):
-                if i == j or (len(top[j]) and num > top[j][-1]):
-                    continue
-                if num == pre_num and pre_top == j:
-                    continue
-                top[i].pop()
-                top[j].append(num)
-                result.append((i, j))
-                back(top, result, num, i)
-                top[i].append(num)
-                top[j].pop()
-                result.pop()
+def hanoitop(start_rod, end_rod, i, num):
+    #시작 장대, 움직일 장대, 목표값의 인덱스(몇 층), 목표 값
+    if start_rod == 3 and end_rod == 3:
+        print('here')
+    global ans
+    if rod[start_rod][-1] != num: # 맨위가 목표한 숫자가 아니면
+        for idx in range(1, 4):
+            if idx not in [start_rod, end_rod]:
+                hanoitop(start_rod, idx, i + 1, rod[start_rod][i + 1])   # 나머지를 다른 곳에 두고
+    if rod[end_rod] and rod[end_rod][-1] < num:  #둘 곳에 수가 더 크면
+        for idx in range(1, 4):
+            if idx not in [start_rod, end_rod]:
+                hanoitop(end_rod, idx, len(rod[end_rod])-1, rod[end_rod][len(rod[end_rod])-1])
+    rod[end_rod].append(rod[start_rod].pop())   # 목표한 수를 목표한 곳에 둔다
+    # 둘떄 기록
+    print(rod)
+    print(start_rod, end_rod)
+    ans.append((start_rod, end_rod))
 
 k = int(input())
 ans = []
-result = []
-top = [[] for _ in range(3)]
-top[0] = list(range(k, 0, -1))
+len_res = float('inf')
+rod = [[] for _ in range(4)]
+rod[1] = list(range(k, 0, -1))
+print(rod)
 min_cnt = float('inf')
-back(top, ans)
 
-print(len(result))
+for i in range(k+1, 0, -1):
+    for j in range(1, 4):
+        for k in range(len(rod[j])):
+                if rod[j][k] == i:
+                    hanoitop(j, 3, k, i)
+                    break
+
+
+print(ans)
